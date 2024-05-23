@@ -2,22 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default () => (
-  <div className="">
-    <div className="">
-      <div className="container">
-        <h1 className="display-4">Food Recipes</h1>
-        <p className="lead">
-          A curated list of recipes for the best homemade meal and delicacies.
+  <div className="container mx-auto">
+    <div className="grid grid-flow-row auto-rows-max place-items-center">
+      <div className="">
+        <h1 className="text-6xl pb-4">plantSwapr</h1>
+        <p className="text-lg">
+          A plant community made by plant peeps, for plant peeps
         </p>
-        <hr className="my-4" />
-        <Link
-          to="/recipes"
-          className="btn btn-lg custom-button"
-          role="button"
-        >
-          View Recipes
-        </Link>
+
       </div>
     </div>
+        <hr className="" />
   </div>
 );
