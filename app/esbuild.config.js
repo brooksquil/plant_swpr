@@ -1,4 +1,4 @@
-const path = require("path")
+const path = require('path')
 
 require("esbuild").build({
   entryPoints: ["application.js"],
@@ -7,8 +7,8 @@ require("esbuild").build({
   absWorkingDir: path.join(process.cwd(), "app/javascript"),
   watch: process.argv.includes("--watch"),
   loader: {
-    ".js": "jsx",
-    ".png": "file",
-    ".svg": "file"
+    '.js': 'jsx',
+    '.png': 'file',
+    '.svg': 'file',
   },
 }).catch(() => process.exit(1))
